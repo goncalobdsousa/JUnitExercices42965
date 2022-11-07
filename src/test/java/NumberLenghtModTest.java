@@ -15,13 +15,13 @@ public class NumberLenghtModTest {
         }
 
         @Test
-        @DisplayName("Teste de soma de dígitos")
+        @DisplayName("Teste de media de dígitos")
         public void sumDigitsTest() {
             int result = numberLenghtMod.sumDigits(123);
-            assertEquals(6, result, "A soma dos dígitos de 123 deve ser igual a 6");
+            assertEquals(2, result, "A média de 1, 2 e 3 deve ser igual a 2");
             result = numberLenghtMod.sumDigits(1234);
-            assertEquals(10, result, "A soma dos dígitos de 1234 deve ser igual a 10");
+            assertEquals(2, result, "A média de 1, 2, 3 e 4 deve ser igual a 2");
             result = numberLenghtMod.sumDigits(12345);
-            assertEquals(15, result, "A soma dos dígitos de 12345 deve ser igual a 15");
+            assertEquals(3, result, "A média de 1, 2, 3, 4 e 5 deve ser igual a 3");
         }
 }

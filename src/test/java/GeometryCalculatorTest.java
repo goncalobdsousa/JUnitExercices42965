@@ -17,8 +17,12 @@ public class GeometryCalculatorTest {
     @Test
     @DisplayName("Teste de área")
     public void areaTest() {
-        int result = geometryCalculator.area(1, 2);
-        assertEquals(2, result, "Área de 1 * 2 deve ser igual a 2");
+        int result = geometryCalculator.area(3, 5);
+        assertEquals(15, result, "Área de 3 * 5 deve ser igual a 15");
+        result = geometryCalculator.area(5, 8);
+        assertEquals(15, result, "Área de 5 * 8 deve ser igual a 40");
+        result = geometryCalculator.area(2, 4);
+        assertEquals(15, result, "Área de 2 * 4 deve ser igual a 8");
     }
 
     @Test

@@ -20,16 +20,20 @@ public class GeometryCalculatorTest {
         int result = geometryCalculator.area(3, 5);
         assertEquals(15, result, "Área de 3 * 5 deve ser igual a 15");
         result = geometryCalculator.area(5, 8);
-        assertEquals(15, result, "Área de 5 * 8 deve ser igual a 40");
+        assertEquals(40, result, "Área de 5 * 8 deve ser igual a 40");
         result = geometryCalculator.area(2, 4);
-        assertEquals(15, result, "Área de 2 * 4 deve ser igual a 8");
+        assertEquals(8, result, "Área de 2 * 4 deve ser igual a 8");
     }
 
     @Test
     @DisplayName("Teste de perímetro")
     public void perimeterTest() {
-        int result = geometryCalculator.perimeter(1, 2);
-        assertEquals(6, result, "Perímetro de 1 + 2 deve ser igual a 6");
+        int result = geometryCalculator.perimeter(3, 5);
+        assertEquals(16, result, "2 * (3 + 5) should equal 16");
+        result = geometryCalculator.perimeter(5, 8);
+        assertEquals(26, result, "2 * (5 + 8) should equal 26");
+        result = geometryCalculator.perimeter(2, 4);
+        assertEquals(12, result, "2 * (2 + 4) should equal 12");
     }
 
     @Test

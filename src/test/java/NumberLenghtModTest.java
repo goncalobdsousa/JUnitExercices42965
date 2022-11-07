@@ -17,7 +17,7 @@ public class NumberLenghtModTest {
         @Test
         @DisplayName("Teste de media de dígitos")
         public void sumDigitsTest() {
-            int result = numberLenghtMod.sumDigits(123);
+            double result = numberLenghtMod.sumDigits(123);
             assertEquals(2, result, "A média de 1, 2 e 3 deve ser igual a 2");
             result = numberLenghtMod.sumDigits(1234);
             assertEquals(2, result, "A média de 1, 2, 3 e 4 deve ser igual a 2");
